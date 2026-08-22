@@ -1,0 +1,8 @@
+sionna==2.0.1
+torch>=2.9
+numpy>=2.2
+scipy>=1.15
+matplotlib>=3.10
+pandas>=2.0
+pyyaml>=6.0
+pytest>=8.0
