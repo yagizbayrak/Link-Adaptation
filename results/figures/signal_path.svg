@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 300" width="1600" height="300" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#52514e"/>
+    </marker>
+    <marker id="arrowdash" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a8a85"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="300" fill="#fcfcfb"/>
+
+  <g stroke="#e3e2df" stroke-width="1.5">
+    <rect x="20"   y="40" width="150" height="86" rx="7" fill="#ffffff"/>
+    <rect x="195"  y="40" width="150" height="86" rx="7" fill="#ffffff"/>
+    <rect x="370"  y="40" width="150" height="86" rx="7" fill="#ffffff"/>
+    <rect x="545"  y="40" width="150" height="86" rx="7" fill="#ffffff"/>
+    <rect x="720"  y="40" width="150" height="86" rx="7" fill="#ffffff"/>
+    <rect x="895"  y="40" width="150" height="86" rx="7" fill="#ffffff"/>
+    <rect x="1070" y="40" width="150" height="86" rx="7" fill="#ffffff"/>
+    <rect x="1245" y="40" width="150" height="86" rx="7" fill="#ffffff"/>
+    <rect x="1420" y="40" width="150" height="86" rx="7" fill="#ffffff"/>
+  </g>
+
+  <g>
+    <rect x="20"   y="40" width="150" height="5" rx="2.5" fill="#2a78d6"/>
+    <rect x="195"  y="40" width="150" height="5" rx="2.5" fill="#2a78d6"/>
+    <rect x="370"  y="40" width="150" height="5" rx="2.5" fill="#2a78d6"/>
+    <rect x="545"  y="40" width="150" height="5" rx="2.5" fill="#2a78d6"/>
+    <rect x="720"  y="40" width="150" height="5" rx="2.5" fill="#2a78d6"/>
+    <rect x="895"  y="40" width="150" height="5" rx="2.5" fill="#eb6834"/>
+    <rect x="1070" y="40" width="150" height="5" rx="2.5" fill="#eb6834"/>
+    <rect x="1245" y="40" width="150" height="5" rx="2.5" fill="#1baf7a"/>
+    <rect x="1420" y="40" width="150" height="5" rx="2.5" fill="#1baf7a"/>
+  </g>
+
+  <g font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="middle">
+    <text x="95"   y="72">Ray traced scene</text>
+    <text x="270"  y="72">Paths per cell</text>
+    <text x="445"  y="72">H(f)</text>
+    <text x="620"  y="72">SINR(f)</text>
+    <text x="795"  y="72">EESM</text>
+    <text x="970"  y="72">CQI report</text>
+    <text x="1145" y="72">Agent</text>
+    <text x="1320" y="72">BLER + HARQ</text>
+    <text x="1495" y="72">Result</text>
+  </g>
+
+  <g font-size="11" fill="#52514e" text-anchor="middle">
+    <text x="95"   y="93">4 base stations</text>
+    <text x="95"   y="109">user walks 300 m</text>
+    <text x="270"  y="93">complex gain,</text>
+    <text x="270"  y="109">delay, Doppler</text>
+    <text x="445"  y="93">288 subcarriers</text>
+    <text x="445"  y="109">24 PRB, 30 kHz</text>
+    <text x="620"  y="93">serving cell /</text>
+    <text x="620"  y="109">(other 3 + noise)</text>
+    <text x="795"  y="93">per-MCS beta</text>
+    <text x="795"  y="109">→ effective SINR</text>
+    <text x="970"  y="93">DMRS error,</text>
+    <text x="970"  y="109">16 levels, 4 slots</text>
+    <text x="1145" y="93">ILLA / OLLA / DQN</text>
+    <text x="1145" y="109">→ MCS index</text>
+    <text x="1320" y="93">up to 4 attempts,</text>
+    <text x="1320" y="109">Chase combining</text>
+    <text x="1495" y="93">goodput, BLER,</text>
+    <text x="1495" y="109">retx rate</text>
+  </g>
+
+  <g stroke="#52514e" stroke-width="1.6" marker-end="url(#arrow)" fill="none">
+    <path d="M 172 83 L 191 83"/>
+    <path d="M 347 83 L 366 83"/>
+    <path d="M 522 83 L 541 83"/>
+    <path d="M 697 83 L 716 83"/>
+    <path d="M 872 83 L 891 83"/>
+    <path d="M 1047 83 L 1066 83"/>
+    <path d="M 1222 83 L 1241 83"/>
+    <path d="M 1397 83 L 1416 83"/>
+  </g>
+
+  <path d="M 795 130 L 795 185 L 1285 185 L 1285 132" stroke="#8a8a85" stroke-width="1.6"
+        stroke-dasharray="6 5" fill="none" marker-end="url(#arrowdash)"/>
+  <text x="1057" y="178" font-size="11.5" fill="#52514e" text-anchor="middle">
+    true effective SINR decides success — the agent never sees it
+  </text>
+
+  <path d="M 1355 130 L 1355 245 L 1145 245 L 1145 132" stroke="#8a8a85" stroke-width="1.6"
+        stroke-dasharray="6 5" fill="none" marker-end="url(#arrowdash)"/>
+  <text x="1232" y="262" font-size="11.5" fill="#52514e" text-anchor="middle">ACK / NACK</text>
+
+  <text x="20" y="285" font-size="11.5" fill="#8a8a85">
+    Ray tracing runs once per scene and is cached; everything right of it replays per 0.5 ms slot.
+  </text>
+</svg>

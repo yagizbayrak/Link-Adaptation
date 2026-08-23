@@ -1,0 +1,7 @@
+,seed,seed,goodput_mbps,goodput_mbps,bler,bler,retransmission_rate,retransmission_rate,mean_mcs,mean_mcs
+,mean,std,mean,std,mean,std,mean,std,mean,std
+agent,,,,,,,,,,
+DQN,3.0,1.5811,12.0834,0.0104,0.1478,0.0008,0.1422,0.0006,11.7422,0.008
+Genie,3.0,1.5811,13.027,0.0015,0.059,0.0001,0.069,0.0001,11.641,0.001
+ILLA,3.0,1.5811,10.9258,0.0055,0.4514,0.0018,0.3312,0.0009,13.688,0.0135
+OLLA,3.0,1.5811,10.8303,0.014,0.1135,0.0002,0.1106,0.0002,10.1524,0.0152
